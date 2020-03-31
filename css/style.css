@@ -1,6 +1,8 @@
 /* BODY */
 body{
     margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
 }
 
 /* HEADER */
@@ -46,6 +48,176 @@ body{
 
 .nav-menu li a{
     transition:color 0.5s,border-bottom 0.5s;
+}
+
+/* Section */
+section{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n + 1){
+    background-color: #fbf9fa;
+}
+
+section:nth-child(2n){
+    background-color: rgb(245, 243, 243);
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    /* margin: 10px auto; */
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* Skills  */
+
+.skills-display{
+    width: 75%;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    margin: 25px;
+    box-shadow: 2px 2px 3px 2px #b9b9b9 inset;
+    overflow: hidden;
+}
+
+.skill-progress>div{ /* direct child of skill progress*/
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Portfolio Section */
+
+#portfolio-container{
+    
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 60px;
+    margin-bottom:20px;
+    justify-content:space-around;
+    
+}
+
+.portfolio-image-container{
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.portfolio-image-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-details{
+    transition:all 0.5s ease-in-out;
+    position:absolute;
+    top:0;left:0;
+    height:100%;
+    color:transparent;
+    text-align:center;
+    padding:10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #808078;
+    color: white;
+}
+
+
+/* common margin classes */
+.mb75{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.mb-purple{
+    background-color: purple;
+}
+.mb-green{
+    background-color: greenyellow;
+}
+
+.mb-red{
+    background-color: red;
+}
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+}
+.seventy-percent{
+    width: 70%;
+    height: inherit;
+}
+.sixty-five-percent{
+    width: 65%;
+    height: inherit;
+}
+
+.sizty-percent{
+    width: 60%;
+    height: inherit;
+}
+.fifty-five-percent{
+    width: 55%;
+    height: inherit;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
 }
 
 /* Name and Social Icons */
